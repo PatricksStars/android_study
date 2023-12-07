@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/drawlayout"
+    tools:context=".EmptyActivity">
+
+    <!--当给FloatingActionButton 赋予Snackbar确定按钮事件时
+    需要用到CoordinatorLayout  会自动赋予合理的弹出布局-->
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:background="@drawable/button"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"/>
+
+        <!--悬浮按钮的实现-->
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/floatbutton"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="bottom|end"
+
+            android:src="@drawable/beauty1"/>
+
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+<com.google.android.material.navigation.NavigationView
+    android:id="@+id/nav"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:menu="@menu/nev_menu"
+    android:layout_gravity="left"
+    app:headerLayout="@layout/circleimagview"/>
+
+
+
+
+
+
+
+
+</androidx.drawerlayout.widget.DrawerLayout>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/title"
+    tools:context=".baseattr.TitleActivity">
+
+    <!--如果按钮的颜色和layout的颜色一样，  需要将按钮的颜色显示出来就在
+    values/themes.xml中将风格
+    style name="Theme.StudyApplication" parent="Theme.MaterialComponents.DayNight.DarkActionBar"
+    改为
+    style name="Theme.StudyApplication" parent="Theme.MaterialComponents.DayNight.DarkActionBar.Bridge"-->
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button"
+        android:gravity="center"
+        android:layout_margin="5dp"
+        android:textSize="20px"
+        android:textColor="@color/white"
+        android:text="后退"></Button>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="文字"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button"
+        android:gravity="center"
+        android:layout_margin="5dp"
+        android:textSize="20px"
+        android:textColor="@color/white"
+        android:text="编辑"></Button>
+
+</LinearLayout>
